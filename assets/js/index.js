@@ -1,44 +1,22 @@
-// This Javascript file includes opening slider, "dark and light mode" and text Animation.
+// This Javascript file includes "dark and light mode" and text Animation.
 
-// Opening Slider
-function openslider() {
-    var str = document.querySelector(".menu").src;
-    var n = str.lastIndexOf('/');
-    var result = str.substring(n + 1);
-    if (result == "menu.png") {
-        document.querySelector(".content").style.opacity = 0.7;
-        document.querySelector(".menu").src = "assets/images/other/cancel.png";
-        document.querySelector(".list-group").style.width = "250px";
-    } else if (result == "cancel.png") {
-        closeslider();
-    }
-}
-function closeslider(){
-    document.querySelector(".list-group").style.width = "0px";
-        document.querySelector(".content").style.opacity = 1.0;
-        document.querySelector(".menu").src = "assets/images/other/menu.png";
-}
 //dark and light mode
-function closemoon(moon) {
-    if(moon === 0){moon = ".list-group"}else{moon = "nav"}
-
-    if (document.querySelector(moon+" .moon").classList.value == 'moon fa-regular fa-moon') {
-        document.querySelector(moon+" .moon").classList.remove("fa-moon");
-        document.querySelector(moon+" .moon").classList.add("fa-sun");
-        document.querySelector(moon+" .moon").classList.remove("fa-regular");
-        document.querySelector(moon+" .moon").classList.add("fa-solid");
+function closemoon() {
+    if (document.querySelector(" .moon").classList.value == 'moon fa-regular fa-moon') {
+        document.querySelector(" .moon").classList.remove("fa-moon");
+        document.querySelector(" .moon").classList.add("fa-sun");
+        document.querySelector(" .moon").classList.remove("fa-regular");
+        document.querySelector(" .moon").classList.add("fa-solid");
         document.querySelector("body").style.backgroundColor = "#1a1a1a";/*#332d2c*/
         document.querySelector("body").style.color = "#fff";
-        document.querySelector(moon+" .moon").style.color = "#fff";
         form("#1a1a1a","#fff");
-    } else if (document.querySelector(moon+" .moon").classList.value == 'moon fa-sun fa-solid') {
-        document.querySelector(moon+" .moon").classList.add("fa-regular");
-        document.querySelector(moon+" .moon").classList.remove("fa-solid");
-        document.querySelector(moon+" .moon").classList.remove("fa-sun");
-        document.querySelector(moon+" .moon").classList.add("fa-moon");
+    } else if (document.querySelector(" .moon").classList.value == 'moon fa-sun fa-solid') {
+        document.querySelector(" .moon").classList.add("fa-regular");
+        document.querySelector(" .moon").classList.remove("fa-solid");
+        document.querySelector(" .moon").classList.remove("fa-sun");
+        document.querySelector(" .moon").classList.add("fa-moon");
         document.querySelector("body").style.backgroundColor = "#fff";
         document.querySelector("body").style.color = "#000";
-        document.querySelector(moon+" .moon").style.color = "rgb(36, 56, 92)";
         form("#fff","#1a1a1a");
     }
 }

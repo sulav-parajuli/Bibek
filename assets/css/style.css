@@ -2,40 +2,20 @@
 :root {
     --recommendeddark: #121212;
     --footer: #24272E;
+    /* color type A */
+  --line_color : #555555 ;
+
+  /* color type B */
+  /* --line_color : #1b1919 ;*/
+
+  /* color type C */
+  /* --line_color : #00135C ;*/
 }
 
 * {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-
-.list-group {
-    height: 100%;
-    background-color: black;
-    margin: 0;
-    width: 0;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.list-group a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: var(--white);
-    display: block;
-    transition: 0.3s;
-}
-
-.list-group .moon{
-    display: none;
 }
 
 .content{
@@ -47,7 +27,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 0;
+    padding-bottom: 1%;
+    background-color: #00a2ed;
+    color: #fff;
+    position:fixed;
+    opacity: 100%;
+    width: 100%;
+}
+nav a{
+    color: #fff;
 }
 
 .logo {
@@ -65,7 +54,7 @@ nav {
     display: flex;
     gap: 10px;
     padding-right: 3%;
-}
+} */
 
 .list ul{
     display: flex;
@@ -88,11 +77,6 @@ a:hover {
     text-decoration: none;
 }
 
-.menu{
-    display:none;
-    position:fixed;
-}
-
 .moon {
     color: #00a2ed;
 }
@@ -113,6 +97,7 @@ a:hover {
     /* padding-top: 7%;  */
     color: #fff;
     text-align: center;
+    overflow-x: hidden;
 }
 #profile ::before {
      font-size: 50px;
@@ -135,18 +120,11 @@ p {
     font-size: 200%;
 }
 
-#profile .button1{
-    display: inline-block;
+#profile .profile-button{
+    display: block;
     position: absolute;
+    width: 100%;
     top:70%;
-    left: 40%;
-}
-
-#profile .button2{
-    display: inline-block;
-    position: absolute;
-    top:70%;
-    left: 50%;
 }
 
 #soc-link {
@@ -187,11 +165,6 @@ p {
 .mail {
     color: #237d7b;
 }
-
-/* .space{
-    width:250px;
-    height:250px;
-} */
 
 /*For arrow animation goto arrow.css*/
 
@@ -399,6 +372,15 @@ input,
 textarea {
     text-align: center;
     margin:0;
+}
+
+.submit{
+    border: 0px;
+    background-color:transparent;
+    color:#00a2ed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .form-controller{
