@@ -94,11 +94,15 @@ window.onload = function() {
     css.innerHTML = ".typed > .wrap { border-right: solid #000000}";
     document.body.appendChild(css);
 };
+var x = window.matchMedia("(max-width: 868px)");
+//on smaller screen.
+if(x.matches){
+    document.querySelector(".moon").innerHTML = "Mode";
+}
 //scroll reveal..
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-    var x = window.matchMedia("(max-width: 868px)");
-  
+
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
@@ -110,14 +114,6 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
-    //for not affecting menu bar button on smaller screen due to reveal animation.
-    if(x.matches){
-    setTimeout(function(){
-        for (var i = 0; i < reveals.length; i++) {
-            reveals[i].classList.remove("reveal");
-        }
-    }, 1000);
-}
   }
   
   window.addEventListener("scroll", reveal);
