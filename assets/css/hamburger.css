@@ -85,6 +85,7 @@
   @media screen and (max-width: 868px){
     nav{
         padding-top: 1% ;
+        height: 47px;
     }  
     .hamburger {
         display: block;
@@ -92,8 +93,8 @@
     
       .list ul {
         position: fixed;
-        top: 55px;
-        right: 0;
+        top: 47px;
+        left: 0;
         width: 320px;
         height: 100%;
         padding: 40px 0;
@@ -102,13 +103,17 @@
         align-items: flex-start;
         flex-direction: column;
         box-shadow: -8px 2px 10px rgba(0, 0, 0, 0.082);
-        transform: translateX(100%);
+        transform: translateY(100%);
         transition: all 0.3s;
       }
 
       .list ul li a {
         color: #000;
       }
+
+      .list ul li a.moon{
+        color: #000;
+    }
     
       .list ul.active {
         transform: translateX(0);

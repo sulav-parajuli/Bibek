@@ -116,7 +116,7 @@ p {
     display: inline-block;
     position: absolute;
     top:50%;
-    left: 35%;
+    left: 40%;
     font-size: 200%;
 }
 
@@ -438,11 +438,12 @@ footer {
 
 
 /*Media Queries*/
-
-@media screen and (max-width: 868px) {
-    .content .moon{
-        visibility: hidden;
+@media screen and (max-width: 1075px) {
+    #profile .typed {
+        left:35%;
     }
+}
+@media screen and (max-width: 868px) {
     #details{
         padding-bottom: 5%;
     }

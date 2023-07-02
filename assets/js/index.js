@@ -9,6 +9,7 @@ function closemoon() {
         document.querySelector(" .moon").classList.add("fa-solid");
         document.querySelector("body").style.backgroundColor = "#1a1a1a";/*#332d2c*/
         document.querySelector("body").style.color = "#fff";
+        navlist("#000","#fff");
         form("#1a1a1a","#fff");
     } else if (document.querySelector(" .moon").classList.value == 'moon fa-sun fa-solid') {
         document.querySelector(" .moon").classList.add("fa-regular");
@@ -17,8 +18,21 @@ function closemoon() {
         document.querySelector(" .moon").classList.add("fa-moon");
         document.querySelector("body").style.backgroundColor = "#fff";
         document.querySelector("body").style.color = "#000";
+        navlist("#fff","#000");
         form("#fff","#1a1a1a");
     }
+}
+//dark and light mode in list
+function navlist(mode,col){
+    //This function is only applicable for smaller screen
+    var x = window.matchMedia("(max-width: 868px)");
+    var item = document.querySelectorAll(".list ul li").length;
+    if(x.matches){
+    document.querySelector(".list ul").style.backgroundColor = mode;
+    for(i=0;i<item;i++){
+        document.querySelectorAll(".list ul li a")[i].style.color = col;
+    }
+}
 }
 //dark and light mode in form
 function form(mode,col){
