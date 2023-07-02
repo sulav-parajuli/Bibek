@@ -116,7 +116,7 @@ p {
     display: inline-block;
     position: absolute;
     top:50%;
-    left: 40%;
+    left: 35%;
     font-size: 200%;
 }
 
@@ -147,15 +147,6 @@ p {
 
 .instagram {
     color: #fe2c54;
-}
-
-.facebook,
-.instagram,
-.mail,
-.github,
-.moon {
-    font-size: 30px;
-    text-decoration: none;
 }
 
 .facebook {
@@ -487,6 +478,13 @@ footer {
     #profile .typed {
         font-size: 160%;
     }
+    #profile h1{
+        top:36%;
+        font-size: 350%;
+    }
+    #profile ::before{
+        font-size: 40px;
+    }
     .col-md-6 {
         flex: 0 0 80%;
         max-width: 80%;
@@ -497,6 +495,30 @@ footer {
     #profile .typed {
         border-right: 0.5% solid rgba(255, 255, 255, .75);
         font-size: 100%;
+    }
+    #profile h1{
+        top:38%;
+        font-size: 300%;
+    }
+    #profile ::before{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #profile h1{
+        top:40%;
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 288px) {
+    #profile h1{
+        top:30%;
+        font-size: 250%;
+    }
+    #profile .typed{
+        left:30%;
     }
 }
 
