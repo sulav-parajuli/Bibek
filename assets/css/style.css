@@ -190,6 +190,10 @@ section {
     width: 50%;
 }
 
+a.button.big-button{
+    width: 70%;
+}
+
 #section-text{
     color: #FF0077;
     justify-items: center;
@@ -447,7 +451,11 @@ footer {
     #details{
         padding-bottom: 5%;
     }
-    
+    a.button.big-button{
+        width: 70%;
+        height: 60px;
+        text-align: center;
+    }
     h2 {
         margin-bottom: 5%;
     }
@@ -511,6 +519,11 @@ footer {
         top:40%;
         font-size: 250%;
     }
+    a.button.big-button{
+        width: 65%;
+        height: 65px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 288px) {
@@ -520,6 +533,11 @@ footer {
     }
     #profile .typed{
         left:30%;
+    }
+    a.button.big-button{
+        width: 75%;
+        height: 65px;
+        text-align: center;
     }
 }
 
