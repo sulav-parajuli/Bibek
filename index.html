@@ -34,7 +34,7 @@
             <li><a href="index.html" class="nav-link active">Home</a></li>
             <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             <li><a href="index.html#about" class="nav-link">About</a></li>
-            <li><a href="index.html#portfolio" class="nav-link">PortFolio</a></li>
+            <li><a href="index.html#portfolio" class="nav-link">My Work</a></li>
             <li><a class="moon fa-regular fa-moon" class="nav-link" onclick="closemoon()"></a></li>
         </ul> 
         <!-- Slider Menu -->
@@ -88,8 +88,7 @@
             </div>
             <div id="profile-des">
                 <p id="section-text"><b>ABOUT</b></p>
-                <h2 id="bottom-gap">Bibek Bajagain</h2>
-                <p>Developer</p>
+                <h2 id="bottom-gap">About Me</h2>
                 <p>
                     I am a web developer and programmer with strong expertise in front-end techniques, designing UI and graphics. I have created numerous web pages, web-based applications, and mobile applications. Additionally, I am an undergraduate IT student hailing from Pokhara, Nepal. Currently, I am pursuing a Bachelor of Science in Computer Science and Information Technology program at Tribhuvan University, Nepal, studying at Mount Annapurna Campus in Pokhara. Apart from my studies, I actively engage in web designing and graphics designing, dedicating my time to enhancing these skills.</p>
                     <a href="#contact" class="button">
@@ -99,7 +98,7 @@
                         <div class="button__drow1"></div>
                         <div class="button__drow2"></div>
                       </a>
-                      <a href="assets/other/SulavC.pdf" download class="button">
+                      <a href="assets/other/BibekCV.pdf" download class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">My Resume</span>
@@ -112,22 +111,32 @@
         <section id="about_details" class="reveal">
             
             <div id="details">
-                <h2 id="bottom-gap">Details</h2>
-                <p>Here is some details about me:</p>
-                <h3 id="bottom-gap"><i class="fa-solid fa-cake-candles"></i>Birthday:</h3>
+                <h2 id="bottom-gap">Profile</h2>
+                <p>Welcome to my profile!</p>
+                <h3 id="bottom-gap">
+                    <!-- <i class="fa-solid fa-cake-candles"></i> -->
+                    Birth Date:</h3>
                 5th April, 2001
-                <h3><i class="fas fa-envelope mt-0 fa-1x"></i>Email:</h3>
+                <h3>
+                    <!-- <i class="fas fa-envelope mt-0 fa-1x"></i> -->
+                    Email:</h3>
                 sulavparajuli82@gmail.com
-                <h3><i class="fas fa-phone mt-0 fa-1x"></i>Phone:</h3>
+                <h3>
+                    <!-- <i class="fas fa-phone mt-0 fa-1x"></i> -->
+                    Phone:</h3>
                 +9779816106956
-                <h3><i class="fa-solid fa-user"></i>Age:</h3>
-                22 years old
-                <h3><i class="fas fa-map-marker-alt fa-1x"></i>Location:</h3>
+                <h3>
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    Job:</h3>
+                Thulo Technology Pvt. Ltd
+                <h3>
+                    <!-- <i class="fas fa-map-marker-alt fa-1x"></i> -->
+                    Location:</h3>
                 Pokhara, Nepal
                 </div>
                 <div id="skills">
                     <h2 id="bottom-gap">Skills</h2>
-                 <p id="bottom-gap">I have multiple skills and ideas for the new generation that I want to share and use to create something that the world will remember.</p>
+                 <p id="bottom-gap">I have various multiple skills for success of next generation.</p>
                  <div class="container">
                     <div class="skill-box">
                         <span class="title">HTML+CSS</span>
@@ -198,64 +207,77 @@
                 </div>
         </section>
         <section id="portfolio" class="reveal">
-            <p id="section-text"><b>PORTFOLIO</b></p>
+            <p id="section-text"><b>My Work</b></p>
                 <h2 id="bottom-gap" style="text-align: center;">See my works</h2>
                     <div class="type">
                       <ul id="portfolio-filters">
                         <li data-filter="*" class="filter-active" onclick="list(0)">All</li>
                         <li data-filter=".filter-web" onclick="list(1)">Web</li>
                         <li data-filter=".filter-app" onclick="list(2)">Applications</li>
-                        <li data-filter=".filter-seo" onclick="list(3)">SEO & Boosting</li>
+                        <li data-filter=".filter-software" onclick="list(3)">Software</li>
                         <li data-filter=".filter-design" onclick="list(4)">Designing</li>
                       </ul>
                     </div>
 
                     <div class="row portfolio-container">
 
-                        <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-seo">
-                          <img src="assets/images/portfolio/swopnilstoregoogleseo.png" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Google Business and SEO</h4>
-                            <p>Swopnil Store</p>
-                            <a href="assets/images/portfolio/swopnilstoregoogleseo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="fa-regular fa-plus"></i></a>
-                            <a href="https://www.google.com/search?q=swopnil+store" class="details-link" title="More Details"><i class="fa-solid fa-link"></i></a>
-                          </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-software">
+                            <div class="card">
+                        <img src="assets/images/portfolio/course.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SOFTWARE</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                            <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
                         </div>
-              
+                        </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-web">
-                            <img src="assets/images/portfolio/swopnilstore.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              <h4>Web Development and Hosting</h4>
-                              <p>Swopnil Store</p>
-                              <a href="assets/images/portfolio/swopnilstore.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="fa-regular fa-plus"></i></a>
-                              <a href="https://www.swopnilstore.com.np/" class="details-link" title="More Details"><i class="fa-solid fa-link"></i></a>
-                            </div>
+                            <div class="card">
+                        <img src="assets/images/portfolio/course.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">WEB</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                        <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
+                        </div>
+                        </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-design">
-                            <img src="assets/images/portfolio/graphics.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              <h4>Graphics Designing and Boosting</h4>
-                              <p>Swopnil Store</p>
-                              <a href="assets/images/portfolio/graphics.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="fa-regular fa-plus"></i></a>
-                              <a href="https://www.instagram.com/swopnil_store/" class="details-link" title="More Details"><i class="fa-solid fa-link"></i></a>
-                            </div>
+                            <div class="card">
+                        <img src="assets/images/portfolio/course.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">DESIGN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                        <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
+                        </div>
+                        </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-web">
-                            <img src="assets/images/portfolio/rajendrakhatri.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              <h4>PortFolio Website</h4>
-                              <p>Rajendra Khatri</p>
-                              <a href="assets/images/portfolio/rajendrakhatri.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="fa-regular fa-plus"></i></a>
-                              <a href="https://rajendrakhatri.com.np/" class="details-link" title="More Details"><i class="fa-solid fa-link"></i></a>
-                            </div>
+                            <div class="card">
+                        <img src="assets/images/portfolio/course.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">WEB</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                        <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
                         </div>
-                      </div>
+                        </div>
+                        </div>
+                        </div>
+            
                       <a href="#" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
-                        <span class="button__text">Load More</span>
+                        <span class="button__text">See More</span>
                         <div class="button__drow1"></div>
                         <div class="button__drow2"></div>
                       </a>
@@ -267,16 +289,16 @@
                 <div id="des">
                     <h3>
                     <img src="assets/images/services/web-development.png" width="20%" height="20%"/></h3>
-                    <h3>Web Development and Digital Marketing</h3>
+                    <h3>Web and Software Development</h3>
                     <p>
-                        I have the ability to develop responsive websites for my clients, catering to their specific requirements while ensuring better SEO, cloud-based hosting, and enhanced security measures. </p> 
+                        I have the ability to develop responsive websites and softwares for my clients, according to their specific requirements and needs.</p> 
                 </div>
                 
                 <div id="des">
                     <h3>
                         <img src="assets/images/services/web-design.png" width="20%" height="20%"/></h3>
                     <h3>Web and Mobile Design</h3>
-                    <p>I possess the ability to design responsive websites and mobile applications with flexible layouts for my clients, incorporating creative ideas and utilizing various platforms such as WordPress, JavaScript, Bootstrap,flutter and more.</p> 
+                    <p>I can build websites and mobile applications with beautiful and responsive ui design and layout for my clients using various platforms such as WordPress, JavaScript, Bootstrap,flutter and more.</p> 
                 </div>
                 </div>
                 <div id="type">
@@ -284,14 +306,14 @@
                         <h3>
                             <img src="assets/images/services/administrator.png" width="20%" height="20%"/></h3>
                         <h3>Digital Consultant</h3>
-                        <p>I can provide assistance to individuals and organizations in various aspects of the technology and digital world. Additionally, I am available to work as a freelancer, offering my expertise in these areas.</p> 
+                        <p>I am eager to help any organizations or individuals with my creative ideas in various aspects of the technology in my field.</p> 
                     </div>
                     <div id="des">
                     <h3>
                       <img src="assets/images/services/graphic-design.png" width="20%" height="20%"/></h3>
                     <h3>Graphics Design</h3>
                     <p>
-                        I possess the skills to design graphics at a professional level, catering to your specific requirements. </p> 
+                        I have the skills and potential to design templates, graphics according to your requirements. </p> 
                 </div>
             </div>
             
@@ -299,7 +321,7 @@
         <section id="contact" class="reveal">
             <p id="section-text"><b>CONTACT</b></p>
             <h2 id="bottom-gap" style="text-align: center;">Contact Me</h2>
-            <p style="text-align:center">I'd Love To Hear From You.<br>Any valuable information between us must be safe.</p>
+            <p style="text-align:center">Any Query? Feel Free to contact me.</p>
             <form action="assets/forms/contact.php" method="post">
                 <div class="form-controller">
                     <div class="input-field fname">
