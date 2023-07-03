@@ -32,7 +32,7 @@ nav {
     background-color: #00a2ed;
     color: #fff;
     position:fixed;
-    opacity: 100%;
+    opacity: 85%;
     width: 100%;
 }
 nav a{
@@ -540,4 +540,17 @@ footer {
         text-align: center;
     }
 }
+
+/*Landscape orientation*/
+@media only screen and (orientation: landscape) {
+    #profile h1{
+        top:20%;
+    }
+    #profile .typed{
+        top:40%;
+    }
+    #soc-link{
+        top: 55%;
+    }
+  }
 
